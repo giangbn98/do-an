@@ -3,6 +3,7 @@ package com.hubt.data.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -15,6 +16,7 @@ import java.util.Set;
 @Entity
 @Data
 @Table(name = "sys_user")
+@EqualsAndHashCode(callSuper = true)
 public class User extends BaseModel implements UserDetails, Serializable {
 
     @Id
