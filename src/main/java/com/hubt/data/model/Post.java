@@ -1,6 +1,7 @@
 package com.hubt.data.model;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import java.util.List;
 @Entity
 @Data
 @ToString
+@EqualsAndHashCode(callSuper = true)
 public class Post extends BaseModel {
 
     @Id
