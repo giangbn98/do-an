@@ -2,12 +2,14 @@ package com.hubt.data.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 
 @Table
 @Entity
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Contact extends BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
