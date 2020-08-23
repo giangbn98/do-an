@@ -45,7 +45,3 @@ bootJar {
 //    mainClassName = 'com.esbt.conductorerp.ConductorErpApplication'
 }
 
-jar {
-    baseName = 'app'
-    version = '0.0.1'
-}
