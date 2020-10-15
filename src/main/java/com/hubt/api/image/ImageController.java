@@ -37,7 +37,7 @@ public class ImageController {
         for (MultipartFile multipartFile : list) {
             imageService.readImage(multipartFile);
             Image image = new Image();
-            image.setUrl("http://"+request.getServerName()+":9090/images/"+multipartFile.getOriginalFilename());
+            image.setUrl("https://gb-app.herokuapp.com//images/"+multipartFile.getOriginalFilename());
             image.setCreatedDate(DateUtils.convertDate(new Date(),"dd-MM-yyyy hh:mm:ss"));
             image.setUserId(user.getId());
             imageRepository.save(image);
